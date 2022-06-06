@@ -15,11 +15,18 @@
 </head>
 <body>
       <div class="d-flex justify-content-center flex-column align-items-center p-4">
+        <video autoPlay muted loop id='bgVideo'>
+            <source src="../static/background.mp4" type="video/mp4" />
+            Your browser does not support video 😂.
+  	    </video>
+
         <h1 class="mt-5">Traffic Violation Detection</h1>
 
+        <p class="my-3 color-primary">Please select one option.</p>
+
         <div class="main__buttons d-flex justify-content-around">
-          <a href="/helmet" class="pure-material-button-contained d-flex justify-content-center align-items-center">Helmet---</a>
-          <a href="/triples" class="pure-material-button-contained d-flex justify-content-center align-items-center">Triples---</a>
+          <a href="/helmet" class="pure-material-button-contained d-flex justify-content-center align-items-center">Helmet</a>
+          <a href="/triples" class="pure-material-button-contained d-flex justify-content-center align-items-center">Triples</a>
           <a href="/mobile" class="pure-material-button-contained d-flex justify-content-center align-items-center">Mobile</a>
         </div>
       </div>
