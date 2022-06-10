@@ -50,7 +50,7 @@ def helemt():
         f = request.files['file']
         f.save("img.jpg")
         yolo_test.detect()
-        return render_template('helmet.html')
+        return render_template('result.html')
 
 @app.route('/triplepredict', methods=['GET', 'POST']) 
 def trip():
@@ -59,14 +59,14 @@ def trip():
         f = request.files['file']
         f.save("img.jpg")
         test.trip()
-        return render_template('triples.html')
+        return render_template('result.html')
 
 @app.route('/mobilepredict', methods=['GET', 'POST']) 
 def mobile():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
-        f.save("img1.jpg") 
+        f.save("img.jpg") 
         mo.mobile()
         return render_template('result.html')
         

@@ -106,10 +106,13 @@ def detect():
         
 
         
-
-    cv2.imshow("Output",img)
+    cv2.imwrite(f"output.jpg",img)
+    #cv2.imshow('Image', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+    #cv2.imshow("Output",img)
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
 
 
 
