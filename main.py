@@ -66,7 +66,7 @@ def mobile():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
-        f.save("img.jpg") 
+        f.save("img1.jpg") 
         mo.mobile()
         return render_template('result.html')
         
