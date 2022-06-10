@@ -32,6 +32,7 @@ h1, h2, h4{
 
 .header div{
   padding-right: 1rem;
+  margin-right: 2rem;
 }
 
 .header div a{
@@ -232,4 +233,22 @@ h1, h2, h4{
 
 .color-primary{
   color: #d5d5d5;
+}
+
+.result-button__back{
+  background: linear-gradient(120.5deg, #80CED7 -7.74%, #007EA7 87.13%);
+  font-family: 'Roboto', sans-serif;
+  color: #d5d5d5;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.result-button__back:hover{
+  text-decoration: none;
+  background-color: #b8c6db;
+  box-shadow: 0 4px 8px #434343, 0 5px 5px #000000;
+  color: #ffffff;
 }
