@@ -5,7 +5,7 @@ import shutil
 
 
 def mobile():
-    img = cv2.imread('img1.jpg')    
+        
     with open('coco-classes.txt', 'r') as f:
         classes = f.read().splitlines()
     
@@ -13,7 +13,7 @@ def mobile():
     
     model = cv2.dnn_DetectionModel(net)
     model.setInputParams(scale=1 / 255, size=(416, 416), swapRB=True)
-    
+    img = cv2.imread('img1.jpg')
     classIds, scores, boxes = model.detect(img, confThreshold=0.6, nmsThreshold=0.4)
     #shutil.rmtree('__pycache__') 
     for (classId, score, box) in zip(classIds, scores, boxes):
@@ -27,10 +27,10 @@ def mobile():
                     color=(0, 255, 0), thickness=2)
     #ghadshjv
     #image = img[i[1]:i[3],i[0]:i[2]]
-    cv2.imwrite(f"output.jpg",img)
+    cv2.imwrite(f"static/output.jpg",img)
     #cv2.imshow('Image', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
     
 
 

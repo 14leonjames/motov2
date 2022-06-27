@@ -114,7 +114,7 @@ def trip():
         
 
         
-    cv2.imwrite(f"output.jpg",img)
+    cv2.imwrite(f"static/output.jpg",img)
     #cv2.imshow('Image', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
